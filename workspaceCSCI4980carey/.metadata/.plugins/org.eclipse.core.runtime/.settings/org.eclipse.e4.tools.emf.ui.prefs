@@ -1,0 +1,6 @@
+DIALOG_HEIGHT=415
+DIALOG_WIDTH=539
+DIALOG_X_ORIGIN=7
+DIALOG_Y_ORIGIN=0
+eclipse.preferences.version=1
+list-tab-xml=<list-tab><columns><column><attribute>GoTree</attribute><width>29</width></column><column><attribute>GoXmi</attribute><width>29</width></column><column><attribute>Marked</attribute><width>41</width></column><column><attribute>Item</attribute><width>38</width></column><column><attribute>elementId</attribute><width>67</width></column><column><attribute>label</attribute><width>39</width></column></columns><filters/></list-tab>
