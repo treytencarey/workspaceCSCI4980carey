@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_4fwW0KsJEeikpKuY1tnn0g">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-TXUMKsJEeikpKuY1tnn0g" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_LBudMKsKEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.command.showhelloworld" commandName="Hello Plug-in"/>
+    <elements xsi:type="commands:Command" xmi:id="_HBUmAKsOEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.command.readfileandshowhello" commandName="Read File and Show Hello"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_JSVGsKsLEeikpKuY1tnn0g" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_LxQAMKsLEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_Vq2ikKsLEeikpKuY1tnn0g" elementId="id.helloplugin" label="Hello plug-in">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_YKPWIKsLEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.handledmenuitem.showhelloworld" label="Show Hello" command="_LBudMKsKEeikpKuY1tnn0g"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_7YmPYKsNEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.handledmenuitem.readfileandshowhello" label="Read File and Show Hello" command="_HBUmAKsOEeikpKuY1tnn0g"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9f16oKsLEeikpKuY1tnn0g" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_UlPI4KsMEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.handler.0" contributionURI="bundleclass://project0828-message-carey/ShowHelloWorldHandler" command="_LBudMKsKEeikpKuY1tnn0g"/>
+    <elements xsi:type="commands:Handler" xmi:id="_dyi7EKsOEeikpKuY1tnn0g" elementId="project0828-helloplugin-carey.handler.1" contributionURI="bundleclass://project0828-message-carey/ReadFileAndShowHelloHandler" command="_HBUmAKsOEeikpKuY1tnn0g"/>
+  </fragments>
+</fragment:ModelFragments>
