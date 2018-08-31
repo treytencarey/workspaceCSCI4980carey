@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_lmYG0KyaEeinI7Jnvpv5yA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_nbi4sKyaEeinI7Jnvpv5yA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_sO4E0KyaEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.command.showhelloworld" commandName="Show Hello World"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_7t-QEKyaEeinI7Jnvpv5yA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_-sfPoKyaEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.partdescriptor.simpleview1example" label="Simple View 1 Example" contributionURI="bundleclass://project0830-part-desc-example-carey/viewer.SimpleView">
+      <handlers xmi:id="_hMUg4KybEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.handler.0" contributionURI="bundleclass://project0830-part-desc-example-carey/handler.ViewPopupHandler" command="_sO4E0KyaEeinI7Jnvpv5yA"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_Oqkc8KybEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_jspvoKybEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.handledmenuitem.showhelloworld" label="Show Hello World" command="_sO4E0KyaEeinI7Jnvpv5yA"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

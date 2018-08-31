@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_n_lAkKyfEeiTfc8QCuvZsg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_r0juEKyfEeiTfc8QCuvZsg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_tnGCsKyfEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.command.showhellopartdescriptor" commandName="Show Hello Part Descriptor"/>
+    <elements xsi:type="commands:Command" xmi:id="_xONTUKyfEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.command.clearpartdescriptor" commandName="Clear Part Descriptor"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_zeDPAKyfEeiTfc8QCuvZsg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_2CC1wKyfEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.partdescriptor.viewpartdescriptor" label="View Part Descriptor" contributionURI="bundleclass://project0830-part-descriptor-carey/viewer.isViewPartDescriptor">
+      <handlers xmi:id="_D8qWgKygEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.handler.0" contributionURI="bundleclass://project0830-part-descriptor-carey/handler.ShowHelloPartDescriptorHandler" command="_tnGCsKyfEeiTfc8QCuvZsg"/>
+      <handlers xmi:id="_HyvQMKygEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.handler.1" contributionURI="bundleclass://project0830-part-descriptor-carey/handler.ClearPartDescriptorHandler" command="_xONTUKyfEeiTfc8QCuvZsg"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_tSB8MKygEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.popupmenu.showhello" label="Show Hello">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_v-VqEKyjEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.handledmenuitem.showhello" label="Show Hello" command="_tnGCsKyfEeiTfc8QCuvZsg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_RXAXwKzMEeiK_dhISPa74g" elementId="project0830-part-descriptor-carey.handledmenuitem.clear" label="Clear" command="_xONTUKyfEeiTfc8QCuvZsg"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

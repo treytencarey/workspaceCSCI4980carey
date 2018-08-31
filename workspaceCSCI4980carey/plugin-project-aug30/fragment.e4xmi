@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_QGYF8KvSEeiVY-JjadHijA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_RmGMQKvSEeiVY-JjadHijA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_U93ZUKvSEeiVY-JjadHijA" elementId="plugin-project-aug30.command.showhelloworld" commandName="Show Hello World"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_f-yJEKvSEeiVY-JjadHijA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_ix2GkKvSEeiVY-JjadHijA" elementId="plugin-project-aug30.partdescriptor.simpleviewpluginprojectaug30" label="Simple View Plugin Project Aug 30" contributionURI="bundleclass://plugin-project-aug30/viewer.SimpleViewAug30">
+      <handlers xmi:id="_3asZ4KvSEeiVY-JjadHijA" elementId="plugin-project-aug30.handler.0" contributionURI="bundleclass://plugin-project-aug30/handler.ViewPopupHandlerAug30" command="_U93ZUKvSEeiVY-JjadHijA"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_17bmkKvSEeiVY-JjadHijA" elementId="plugin-project-aug30.popupmenu.mypopupmenu" label="My Popup Menu Aug 30">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_JWDMMKvTEeiVY-JjadHijA" elementId="plugin-project-aug30.handledmenuitem.showhelloworldaug30" label="Show Hello World Aug 30" command="_U93ZUKvSEeiVY-JjadHijA"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
