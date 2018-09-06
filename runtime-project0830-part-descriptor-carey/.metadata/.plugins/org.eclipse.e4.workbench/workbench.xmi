@@ -184,7 +184,6 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_H-mogKzNEeio15owG-lEaA" elementId="project0830-part-descriptor-carey.partdescriptor.viewpartdescriptor" contributorURI="platform:/plugin/project0830-part-descriptor-carey" contributionURI="bundleclass://project0830-part-descriptor-carey/viewer.isViewPartDescriptor" label="View Part Descriptor">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>active</tags>
-      <tags>activeOnClose</tags>
       <handlers xmi:id="_H-mogazNEeio15owG-lEaA" elementId="project0830-part-descriptor-carey.handler.0" contributorURI="platform:/plugin/project0830-part-descriptor-carey" contributionURI="bundleclass://project0830-part-descriptor-carey/handler.ShowHelloPartDescriptorHandler" command="_tnGCsKyfEeiTfc8QCuvZsg"/>
       <handlers xmi:id="_H-mogqzNEeio15owG-lEaA" elementId="project0830-part-descriptor-carey.handler.1" contributorURI="platform:/plugin/project0830-part-descriptor-carey" contributionURI="bundleclass://project0830-part-descriptor-carey/handler.ClearPartDescriptorHandler" command="_xONTUKyfEeiTfc8QCuvZsg"/>
       <menus xsi:type="menu:PopupMenu" xmi:id="_H-mog6zNEeio15owG-lEaA" elementId="project0830-part-descriptor-carey.popupmenu.showhello" contributorURI="platform:/plugin/project0830-part-descriptor-carey" label="Show Hello">
@@ -199,7 +198,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCYMYKzNEeio15owG-lEaA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_nRF0AKzNEeiqp5ZUx5w7Zw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_FpwRAqzNEeio15owG-lEaA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_B5z_oLIfEeiv9_OvCiXe2A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_FpwRAqzNEeio15owG-lEaA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCYzcKzNEeio15owG-lEaA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -217,7 +216,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCYzdKzNEeio15owG-lEaA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_nRJeYKzNEeiqp5ZUx5w7Zw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_FpvDH6zNEeio15owG-lEaA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_B54RELIfEeiv9_OvCiXe2A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_FpvDH6zNEeio15owG-lEaA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GCYzdazNEeio15owG-lEaA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -800,20 +799,6 @@
   <rootContext xmi:id="_GNyyOqzNEeio15owG-lEaA" elementId="org.eclipse.ui.WorkingSetActionSet" name="Auto::org.eclipse.ui.WorkingSetActionSet"/>
   <rootContext xmi:id="_GNyyPKzNEeio15owG-lEaA" elementId="org.eclipse.ui.actionSet.openFiles" name="Auto::org.eclipse.ui.actionSet.openFiles"/>
   <rootContext xmi:id="_GNyyPqzNEeio15owG-lEaA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
-  <descriptors xmi:id="_2CC1wKyfEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.partdescriptor.viewpartdescriptor" contributorURI="platform:/plugin/project0830-part-descriptor-carey" label="View Part Descriptor" contributionURI="bundleclass://project0830-part-descriptor-carey/viewer.isViewPartDescriptor">
-    <handlers xmi:id="_D8qWgKygEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.handler.0" contributorURI="platform:/plugin/project0830-part-descriptor-carey" contributionURI="bundleclass://project0830-part-descriptor-carey/handler.ShowHelloPartDescriptorHandler" command="_tnGCsKyfEeiTfc8QCuvZsg"/>
-    <handlers xmi:id="_HyvQMKygEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.handler.1" contributorURI="platform:/plugin/project0830-part-descriptor-carey" contributionURI="bundleclass://project0830-part-descriptor-carey/handler.ClearPartDescriptorHandler" command="_xONTUKyfEeiTfc8QCuvZsg"/>
-    <menus xsi:type="menu:PopupMenu" xmi:id="_tSB8MKygEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.popupmenu.showhello" contributorURI="platform:/plugin/project0830-part-descriptor-carey" label="Show Hello">
-      <children xsi:type="menu:HandledMenuItem" xmi:id="_v-VqEKyjEeiTfc8QCuvZsg" elementId="project0830-part-descriptor-carey.handledmenuitem.showhello" contributorURI="platform:/plugin/project0830-part-descriptor-carey" label="Show Hello" command="_tnGCsKyfEeiTfc8QCuvZsg"/>
-      <children xsi:type="menu:HandledMenuItem" xmi:id="_RXAXwKzMEeiK_dhISPa74g" elementId="project0830-part-descriptor-carey.handledmenuitem.clear" contributorURI="platform:/plugin/project0830-part-descriptor-carey" label="Clear" command="_xONTUKyfEeiTfc8QCuvZsg"/>
-    </menus>
-  </descriptors>
-  <descriptors xmi:id="_-sfPoKyaEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.partdescriptor.simpleview1example" contributorURI="platform:/plugin/project0830-part-desc-example-carey" label="Simple View 1 Example" contributionURI="bundleclass://project0830-part-desc-example-carey/viewer.SimpleView">
-    <handlers xmi:id="_hMUg4KybEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.handler.0" contributorURI="platform:/plugin/project0830-part-desc-example-carey" contributionURI="bundleclass://project0830-part-desc-example-carey/handler.ViewPopupHandler" command="_sO4E0KyaEeinI7Jnvpv5yA"/>
-    <menus xsi:type="menu:PopupMenu" xmi:id="_Oqkc8KybEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.popupmenu.mypopupmenu" contributorURI="platform:/plugin/project0830-part-desc-example-carey" label="My Popup Menu">
-      <children xsi:type="menu:HandledMenuItem" xmi:id="_jspvoKybEeinI7Jnvpv5yA" elementId="project0830-part-desc-example-carey.handledmenuitem.showhelloworld" contributorURI="platform:/plugin/project0830-part-desc-example-carey" label="Show Hello World" command="_sO4E0KyaEeinI7Jnvpv5yA"/>
-    </menus>
-  </descriptors>
   <descriptors xmi:id="_FtoEYKzNEeio15owG-lEaA" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
   </descriptors>
@@ -1249,6 +1234,8 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
+  <descriptors xmi:id="_RR4AsLIdEei27P_jEeg6HA" elementId="project0906-tableview-carey.partdescriptor.tableviewcarey" contributorURI="platform:/plugin/project0906-tableview-carey" label="Table View Carey" iconURI="platform:/plugin/project0906-tableview-carey/icons/sample.png" contributionURI="bundleclass://project0906-tableview-carey/view.MyTableViewerPartDescriptor"/>
+  <descriptors xmi:id="_UubLwLmdEeafsJls3FbU9Q" elementId="simpletableexample.partdescriptor.simpletableview" contributorURI="platform:/plugin/simpleTable1Example" label="Simple Table View" iconURI="platform:/plugin/simpleTable1Example/icons/sample.png" contributionURI="bundleclass://simpleTable1Example/view.MyTableViewer"/>
   <menuContributions xmi:id="_FpM3aKzNEeio15owG-lEaA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" positionInParent="popup:toolbar">
     <children xsi:type="menu:HandledMenuItem" xmi:id="_FpM3aazNEeio15owG-lEaA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" label="%command.name.customize" command="_FpM3aqzNEeio15owG-lEaA"/>
   </menuContributions>
@@ -2307,7 +2294,7 @@
   <addons xmi:id="_FpM3c6zNEeio15owG-lEaA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_FpM3dKzNEeio15owG-lEaA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_FpSW8KzNEeio15owG-lEaA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_BQ9P4bIfEeiv9_OvCiXe2A" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_FpnHEKzNEeio15owG-lEaA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_FpnHEazNEeio15owG-lEaA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
