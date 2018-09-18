@@ -3,6 +3,6 @@ DIALOG_WIDTH=539
 DIALOG_X_ORIGIN=8
 DIALOG_Y_ORIGIN=8
 eclipse.preferences.version=1
-list-tab-xml=<list-tab><columns><column><attribute>GoTree</attribute><width>29</width></column><column><attribute>GoXmi</attribute><width>34</width></column><column><attribute>Marked</attribute><width>41</width></column><column><attribute>Item</attribute><width>89</width></column><column><attribute>elementId</attribute><width>318</width></column><column><attribute>label</attribute><width>125</width></column></columns><filters/></list-tab>
+list-tab-xml=<list-tab><columns><column><attribute>GoTree</attribute><width>29</width></column><column><attribute>GoXmi</attribute><width>34</width></column><column><attribute>Marked</attribute><width>41</width></column><column><attribute>Item</attribute><width>89</width></column><column><attribute>elementId</attribute><width>373</width></column><column><attribute>label</attribute><width>171</width></column></columns><filters/></list-tab>
 searchScope=PROJECT
 searchScopes=[PROJECT]

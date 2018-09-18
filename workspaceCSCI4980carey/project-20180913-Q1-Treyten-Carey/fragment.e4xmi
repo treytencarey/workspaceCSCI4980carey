@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_EovdELebEeiIapM5dPwbMg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_E_bewLebEeiIapM5dPwbMg" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_PiBTwLebEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_l_-ukLebEeiIapM5dPwbMg" elementId="id.20180913-q1-treyten-carey" label="20180913-Q1-Treyten-Carey">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ou9dULebEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.handledmenuitem.readfile" label="Read File" command="_p98cILefEeiIapM5dPwbMg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qKbVwLebEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.handledmenuitem.showhello" label="Show Hello" command="_rwND8LefEeiIapM5dPwbMg"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Uu8PILecEeiIapM5dPwbMg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_W22W0LecEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.partdescriptor.simpleview20180913q1treytencarey" label="Simple View 20180913 Q1 Treyten Carey" contributionURI="bundleclass://project-20180913-Q1-Treyten-Carey/view.SimpleView20180913Q1TreytenCarey">
+      <handlers xmi:id="_9jZDoLedEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.handler.0" contributionURI="bundleclass://project-20180913-Q1-Treyten-Carey/handler.ReversePartDescriptor" command="_apda4LeeEeiIapM5dPwbMg"/>
+      <handlers xmi:id="_uOGpwLefEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.handler.1" contributionURI="bundleclass://project-20180913-Q1-Treyten-Carey/handler.ReadFilePartDescriptor" command="_p98cILefEeiIapM5dPwbMg"/>
+      <handlers xmi:id="_8Cu3QLefEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.handler.2" contributionURI="bundleclass://project-20180913-Q1-Treyten-Carey/handler.ShowHelloPartDescriptor" command="_rwND8LefEeiIapM5dPwbMg"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_q384MLedEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.popupmenu.reverse" label="Reverse">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_UD7RULeeEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.handledmenuitem.reverse" label="Reverse" command="_apda4LeeEeiIapM5dPwbMg"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZDeUgLeeEeiIapM5dPwbMg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_apda4LeeEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.command.reverse" commandName="Reverse"/>
+    <elements xsi:type="commands:Command" xmi:id="_p98cILefEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.command.readfile" commandName="Read File"/>
+    <elements xsi:type="commands:Command" xmi:id="_rwND8LefEeiIapM5dPwbMg" elementId="project-20180913-q1-treyten-carey.command.showhello" commandName="Show Hello"/>
+  </fragments>
+</fragment:ModelFragments>
