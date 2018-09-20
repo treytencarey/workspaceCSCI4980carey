@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_sDRN0L0ZEeiKeMIf2jgU4A">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_8jq9sL0cEeiKeMIf2jgU4A" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="__pna8L0cEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.command.addpersoncommand" commandName="Add Person Command"/>
+    <elements xsi:type="commands:Command" xmi:id="_DulsQL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.command.deletepersoncommand" commandName="Delete Person Command"/>
+    <elements xsi:type="commands:Command" xmi:id="_Hbr20L0iEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.command.exportcommand" commandName="Export Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_FGNmgL0dEeiKeMIf2jgU4A" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_RGoEYL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handler.0" contributionURI="bundleclass://project0920-add-delete-carey/handler.AddPersonHandler" command="__pna8L0cEeiKeMIf2jgU4A"/>
+    <elements xsi:type="commands:Handler" xmi:id="_XjHmsL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handler.1" contributionURI="bundleclass://project0920-add-delete-carey/handler.DeletePersonHandler" command="_DulsQL0dEeiKeMIf2jgU4A"/>
+    <elements xsi:type="commands:Handler" xmi:id="_KuCYYL0iEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handler.2" contributionURI="bundleclass://project0920-add-delete-carey/handler.ExportCommand" command="_Hbr20L0iEeiKeMIf2jgU4A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_anc6YL0dEeiKeMIf2jgU4A" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_hfCdQL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.partdescriptor.simpletableaddingdeletingtreytencarey" label="Simple Table Adding Deleting Treyten Carey" iconURI="platform:/plugin/project0920-add-delete-carey/icons/sample.png" contributionURI="bundleclass://project0920-add-delete-carey/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_qCnA0L0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_s7iVwL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.add" label="Add" command="__pna8L0cEeiKeMIf2jgU4A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_yHtfsL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.delete" label="Delete" command="_DulsQL0dEeiKeMIf2jgU4A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_FgsJwL0iEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.export" label="Export"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
