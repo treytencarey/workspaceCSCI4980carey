@@ -11,6 +11,7 @@
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1537480224882"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_LNJdob0fEei0jq835aeB-Q" selectedElement="_LNJdor0fEei0jq835aeB-Q" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_LNJdor0fEei0jq835aeB-Q" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_LW6doL0fEei0jq835aeB-Q">
         <children xsi:type="advanced:Perspective" xmi:id="_LW6doL0fEei0jq835aeB-Q" elementId="org.eclipse.ui.resourcePerspective" selectedElement="_LW6dob0fEei0jq835aeB-Q" label="Resource" iconURI="platform:/plugin/org.eclipse.ui.ide.application/$nl$/icons/full/eview16/resource_persp.png">
@@ -196,7 +197,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LOikwL0fEei0jq835aeB-Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_3W0sEL0hEeijWdBhSC0JLA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_K3hzH70fEei0jq835aeB-Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_0hx8IL0iEeiBrZvxcgY__g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_K3hzH70fEei0jq835aeB-Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LOikwb0fEei0jq835aeB-Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -214,7 +215,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LOjL0r0fEei0jq835aeB-Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_3W3vYL0hEeijWdBhSC0JLA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_K3hMJr0fEei0jq835aeB-Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_0h1mgL0iEeiBrZvxcgY__g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_K3hMJr0fEei0jq835aeB-Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LOjL070fEei0jq835aeB-Q" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -281,6 +282,7 @@
   <handlers xmi:id="_XjHmsL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handler.1" contributorURI="platform:/plugin/project0920-add-delete-carey" contributionURI="bundleclass://project0920-add-delete-carey/handler.DeletePersonHandler" command="_DulsQL0dEeiKeMIf2jgU4A"/>
   <handlers xmi:id="_krBxoLt6EeaDy7Y0uuRt5A" elementId="simpletableinsertdeleteexample.handler.1" contributorURI="platform:/plugin/simpleTable3InsertDeleteExample" contributionURI="bundleclass://simpleTable3InsertDeleteExample/handler.AddPersonHandler" command="_cn8E8Lt6EeaDy7Y0uuRt5A"/>
   <handlers xmi:id="_YyH-oLv2EeaJQb2_Imn85g" elementId="simpletableinsertdeleteexample.handler.0" contributorURI="platform:/plugin/simpleTable3InsertDeleteExample" contributionURI="bundleclass://simpleTable3InsertDeleteExample/handler.DelPersonHandler" command="_VkGjcLv2EeaJQb2_Imn85g"/>
+  <handlers xmi:id="_KuCYYL0iEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handler.2" contributorURI="platform:/plugin/project0920-add-delete-carey" contributionURI="bundleclass://project0920-add-delete-carey/handler.ExportCommand" command="_Hbr20L0iEeiKeMIf2jgU4A"/>
   <bindingTables xmi:id="_K2-ZU70fEei0jq835aeB-Q" contributorURI="platform:/plugin/org.eclipse.platform" bindingContext="_K2-ZVL0fEei0jq835aeB-Q">
     <bindings xmi:id="_K39Qyb0fEei0jq835aeB-Q" keySequence="ALT+F11" command="_K3dhsb0fEei0jq835aeB-Q">
       <tags>platform:win32</tags>
@@ -803,8 +805,13 @@
   <rootContext xmi:id="_LWzv9L0fEei0jq835aeB-Q" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
   <descriptors xmi:id="_hfCdQL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.partdescriptor.simpletableaddingdeletingtreytencarey" contributorURI="platform:/plugin/project0920-add-delete-carey" label="Simple Table Adding Deleting Treyten Carey" iconURI="platform:/plugin/project0920-add-delete-carey/icons/sample.png" contributionURI="bundleclass://project0920-add-delete-carey/view.MyTableViewer">
     <menus xsi:type="menu:PopupMenu" xmi:id="_qCnA0L0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.popupmenu.mypopupmenu" contributorURI="platform:/plugin/project0920-add-delete-carey" label="My Popup Menu">
-      <children xsi:type="menu:HandledMenuItem" xmi:id="_s7iVwL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.add" contributorURI="platform:/plugin/project0920-add-delete-carey" label="Add" command="__pna8L0cEeiKeMIf2jgU4A"/>
-      <children xsi:type="menu:HandledMenuItem" xmi:id="_yHtfsL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.delete" contributorURI="platform:/plugin/project0920-add-delete-carey" label="Delete" command="_DulsQL0dEeiKeMIf2jgU4A"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_s7iVwL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.add" contributorURI="platform:/plugin/project0920-add-delete-carey" label="Add">
+        <command href="platform:/plugin/project0920-add-delete-carey/fragment.e4xmi#__pna8L0cEeiKeMIf2jgU4A"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_yHtfsL0dEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.delete" contributorURI="platform:/plugin/project0920-add-delete-carey" label="Delete">
+        <command href="platform:/plugin/project0920-add-delete-carey/fragment.e4xmi#_DulsQL0dEeiKeMIf2jgU4A"/>
+      </children>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_FgsJwL0iEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.handledmenuitem.export" contributorURI="platform:/plugin/project0920-add-delete-carey" label="Export"/>
     </menus>
   </descriptors>
   <descriptors xmi:id="_usZ0ILtzEeaDy7Y0uuRt5A" elementId="simpletableinsertdeleteexample.partdescriptor.simpletabletoinsertanddelete" contributorURI="platform:/plugin/simpleTable3InsertDeleteExample" label="Simple Table To Insert and Delete" iconURI="platform:/plugin/simpleTable3InsertDeleteExample/icons/sample.png" contributionURI="bundleclass://simpleTable3InsertDeleteExample/view.MyTableViewer">
@@ -2297,6 +2304,7 @@
   <commands xmi:id="_LMy4U70fEei0jq835aeB-Q" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_K3bsc70fEei0jq835aeB-Q"/>
   <commands xmi:id="_LMy4VL0fEei0jq835aeB-Q" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_K3bsc70fEei0jq835aeB-Q"/>
   <commands xmi:id="_LMzfYL0fEei0jq835aeB-Q" elementId="AUTOGEN:::org.eclipse.pde.ui.logViewActions/org.eclipse.jdt.debug.ui.LogViewActions.showStackTrace" commandName="Show Stack Trace in Console View" description="Show Stack Trace in Console View" category="_K3bsc70fEei0jq835aeB-Q"/>
+  <commands xmi:id="_Hbr20L0iEeiKeMIf2jgU4A" elementId="project0920-add-delete-carey.command.exportcommand" contributorURI="platform:/plugin/project0920-add-delete-carey" commandName="Export Command"/>
   <addons xmi:id="_K2-ZW70fEei0jq835aeB-Q" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_K2-ZXL0fEei0jq835aeB-Q" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_K2-ZXb0fEei0jq835aeB-Q" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2308,7 +2316,7 @@
   <addons xmi:id="_K2-ZY70fEei0jq835aeB-Q" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_K2-ZZL0fEei0jq835aeB-Q" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_K3FHAL0fEei0jq835aeB-Q" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_0IerUb0iEeiBrZvxcgY__g" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_K3bsUL0fEei0jq835aeB-Q" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_K3bsUb0fEei0jq835aeB-Q" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
