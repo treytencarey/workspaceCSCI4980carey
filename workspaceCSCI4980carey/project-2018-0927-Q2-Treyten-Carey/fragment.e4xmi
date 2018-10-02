@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gBa3MMKYEeiXlYmJjgRMGw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_kahlcMKYEeiXlYmJjgRMGw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_3KdPUMKYEeiXlYmJjgRMGw" elementId="project-2018-0927-q2-treyten-carey.partdescriptor.simpletableview20180927q2treytencarey" label="Simple Table View 2018 0927 Q2 Treyten Carey" contributionURI="bundleclass://project-2018-0927-Q2-Treyten-Carey/view.SimpleTableView20180927Q2TreytenCarey"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_mgWXkMKaEeiXlYmJjgRMGw" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_o1cmsMKaEeiXlYmJjgRMGw" elementId="project-2018-0927-q2-treyten-carey.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_uYk4EMKaEeiXlYmJjgRMGw" elementId="id.2018-0927-q2-treyten-carey" label="2018-0927-Q2-Treyten-Carey">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_yYnmEMKaEeiXlYmJjgRMGw" elementId="project-2018-0927-q2-treyten-carey.handledmenuitem.export" label="Export" command="_3a6bQMKaEeiXlYmJjgRMGw"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_2HfEgMKaEeiXlYmJjgRMGw" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_3a6bQMKaEeiXlYmJjgRMGw" elementId="project-2018-0927-q2-treyten-carey.command.exportcommand" commandName="Export Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_8hQC8MKaEeiXlYmJjgRMGw" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_-U6Y8MKaEeiXlYmJjgRMGw" elementId="project-2018-0927-q2-treyten-carey.handler.0" contributionURI="bundleclass://project-2018-0927-Q2-Treyten-Carey/handler.Export" command="_3a6bQMKaEeiXlYmJjgRMGw"/>
+  </fragments>
+</fragment:ModelFragments>

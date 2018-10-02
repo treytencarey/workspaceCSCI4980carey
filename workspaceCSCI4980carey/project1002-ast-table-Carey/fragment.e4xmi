@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_KsihAMaNEeiHq412bA3-wQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Nvi_AMaNEeiHq412bA3-wQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_QTbRAMaNEeiHq412bA3-wQ" elementId="project1002-ast-table-carey.partdescriptor.simpletableviewast1002carey" label="Simple Table View AST 1002 Carey" iconURI="platform:/plugin/project1002-ast-table-Carey/icons/sample.png" contributionURI="bundleclass://project1002-ast-table-Carey/view.Viewer"/>
+  </fragments>
+</fragment:ModelFragments>
