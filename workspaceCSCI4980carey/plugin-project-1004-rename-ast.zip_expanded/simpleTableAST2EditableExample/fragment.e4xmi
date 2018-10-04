@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_4FXFILwDEeaJQb2_Imn85g">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ZXU1QLwpEea86c_HGvPkWw" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_coaLgLwpEea86c_HGvPkWw" elementId="simpletableast2editableexample.command.refresh" commandName="Refresh"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_e1GFgLwpEea86c_HGvPkWw" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_iqBIoLwpEea86c_HGvPkWw" elementId="simpletableast2editableexample.handler.0" contributionURI="bundleclass://simpleTableAST2EditableExample/handler.TableRefreshHandler" command="_coaLgLwpEea86c_HGvPkWw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4pyA0LwDEeaJQb2_Imn85g" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_7tcmILwDEeaJQb2_Imn85g" elementId="simpletableast2editableexample.partdescriptor.simpleasteditabletable" label="Simple AST Editable Table" iconURI="platform:/plugin/simpleTableAST2EditableExample/icons/sample.png" contributionURI="bundleclass://simpleTableAST2EditableExample/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_OmcFkLwpEea86c_HGvPkWw" elementId="simpletableast2editableexample.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Wv78QLwpEea86c_HGvPkWw" elementId="simpletableast2editableexample.handledmenuitem.refresh" label="Refresh" command="_coaLgLwpEea86c_HGvPkWw"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
