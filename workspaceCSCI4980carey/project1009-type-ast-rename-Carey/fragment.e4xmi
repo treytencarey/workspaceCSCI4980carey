@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_nSZX8MgeEei7foZwxFEn1g">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_oVX34MgeEei7foZwxFEn1g" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_qUWtEMgeEei7foZwxFEn1g" elementId="project1004-type-ast-rename-carey.command.refresh" commandName="Refresh"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_x_Wp4MgeEei7foZwxFEn1g" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_y-X24MgeEei7foZwxFEn1g" elementId="project1004-type-ast-rename-carey.handler.0" contributionURI="bundleclass://project1004-type-ast-rename-Carey/handler.TableRefreshHandler" command="_qUWtEMgeEei7foZwxFEn1g"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_34EwwMgeEei7foZwxFEn1g" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_54rWkMgeEei7foZwxFEn1g" elementId="project1009-type-ast-rename-carey.partdescriptor.simpletableview-renametypeast-1004carey" label="Simple Table View - Rename Type AST - 1009 Carey" iconURI="platform:/plugin/project1004-type-ast-rename-Carey/icons/sample.png" contributionURI="bundleclass://project1004-type-ast-rename-Carey/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_AKer0MgfEei7foZwxFEn1g" elementId="project1009-type-ast-rename-carey.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DxKeoMgfEei7foZwxFEn1g" elementId="project1004-type-ast-rename-carey.handledmenuitem.refresh" label="Refresh" command="_qUWtEMgeEei7foZwxFEn1g"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
