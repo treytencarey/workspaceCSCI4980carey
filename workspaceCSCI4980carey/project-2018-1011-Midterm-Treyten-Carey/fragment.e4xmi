@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_IRONYM2ZEeiXXM0PFObzCQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_LrLLwM2ZEeiXXM0PFObzCQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_PB8TQM2ZEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.partdescriptor.simpletableview20181011midtermtreytencarey" label="Simple Table View 2018 1011 Midterm Treyten Carey" iconURI="platform:/plugin/project-2018-1011-Midterm-Treyten-Carey/icons/sample.png" contributionURI="bundleclass://project-2018-1011-Midterm-Treyten-Carey/view.SimpleTableView20181011MidtermTreytenCarey">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_bjHp8M2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_lMn60M2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.handledmenuitem.exportselectedrows" label="Export Selected Row(s)" command="_uCjZsM2bEeiXXM0PFObzCQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_qZBHMM2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.handledmenuitem.movetop" label="Move Top" command="_3HVz8M2bEeiXXM0PFObzCQ"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_s2G0sM2bEeiXXM0PFObzCQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_uCjZsM2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.command.export" commandName="Export"/>
+    <elements xsi:type="commands:Command" xmi:id="_3HVz8M2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.command.move" commandName="Move"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_uflT8M2bEeiXXM0PFObzCQ" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_wNEJcM2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.handler.0" contributionURI="bundleclass://project-2018-1011-Midterm-Treyten-Carey/handler.Export" command="_uCjZsM2bEeiXXM0PFObzCQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_4p2vkM2bEeiXXM0PFObzCQ" elementId="project-2018-1011-midterm-treyten-carey.handler.1" contributionURI="bundleclass://project-2018-1011-Midterm-Treyten-Carey/handler.Move" command="_3HVz8M2bEeiXXM0PFObzCQ"/>
+  </fragments>
+</fragment:ModelFragments>

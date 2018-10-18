@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_61KT0NMdEeiWxL-1dev-Tg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__HFcANMdEeiWxL-1dev-Tg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_CoE2gNMeEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.partdescriptor.simpletableview-deletemethodast-1018carey" label="Simple Table View - Delete Method AST - 1018 Carey" iconURI="platform:/plugin/project1018-type-delete-ast-Carey/icons/sample.png" contributionURI="bundleclass://project1018-type-delete-ast-Carey/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_SjHW4NMeEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_BLsGINMgEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.handledmenuitem.refresh" label="Refresh" command="_o2B_UNMeEeiWxL-1dev-Tg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_EWa8wNMgEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.handledmenuitem.deleteemptymethod" label="Delete Empty Method" command="_qNVwgNMeEeiWxL-1dev-Tg"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_nJwDsNMeEeiWxL-1dev-Tg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_o2B_UNMeEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.command.refresh" commandName="Refresh"/>
+    <elements xsi:type="commands:Command" xmi:id="_qNVwgNMeEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.command.deleteempty" commandName="Delete Empty"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_r269cNMeEeiWxL-1dev-Tg" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_t_7RUNMeEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.handler.0" contributionURI="bundleclass://project1018-type-delete-ast-Carey/handler.Refresh" command="_o2B_UNMeEeiWxL-1dev-Tg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_zFD_INMeEeiWxL-1dev-Tg" elementId="project1018-type-delete-ast-carey.handler.1" contributionURI="bundleclass://project1018-type-delete-ast-Carey/handler.Delete" command="_qNVwgNMeEeiWxL-1dev-Tg"/>
+  </fragments>
+</fragment:ModelFragments>
