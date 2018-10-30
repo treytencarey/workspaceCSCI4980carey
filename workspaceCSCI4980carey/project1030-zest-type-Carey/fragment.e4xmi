@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_CtW1MNyMEeiFy-QzE546wQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DRjHYNyMEeiFy-QzE546wQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_HgyvANyMEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.partdescriptor.simplezestview-type-1030carey" label="Simple Zest View - Type - 1030 Carey" iconURI="platform:/plugin/project1030-zest-type-Carey/icons/sample.png" contributionURI="bundleclass://project1030-zest-type-Carey/view.SimpleZestView">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_XXs9UNyMEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.popupmenu.readshow" label="ReadShow">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ZN_JgNyMEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.handledmenuitem.readfileshowgraph" label="Read File + Show Graph" command="_fl_NYNyMEeiFy-QzE546wQ"/>
+      </menus>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_n2HwMNyPEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.partdescriptor.simpleview" label="Simple View" iconURI="platform:/plugin/project1030-zest-type-Carey/icons/sample.png" contributionURI="bundleclass://project1030-zest-type-Carey/view.SimpleView">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_rSVYYNyPEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.popupmenu.simpleview" label="Simple View"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_eXuDcNyMEeiFy-QzE546wQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_fl_NYNyMEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.command.readshow" commandName="ReadShow"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hQ_WoNyMEeiFy-QzE546wQ" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_ixW9MNyMEeiFy-QzE546wQ" elementId="project1030-zest-type-carey.handler.0" contributionURI="bundleclass://project1030-zest-type-Carey/handler.ReadFileShowGraphHandler" command="_fl_NYNyMEeiFy-QzE546wQ"/>
+  </fragments>
+</fragment:ModelFragments>
