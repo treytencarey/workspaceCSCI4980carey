@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-ER6sN4fEeiek_VhfSji1g">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-njm4N4fEeiek_VhfSji1g" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_DXWW0N4gEeiek_VhfSji1g" elementId="project1101-zest-ast-type-carey.partdescriptor.simplezestview-ast-type-1101carey" label="Simple Zest View - AST - Type - 1101 Carey" iconURI="platform:/plugin/project1101-zest-ast-type-Carey/icons/sample.png" contributionURI="bundleclass://project1101-zest-ast-type-Carey/view.SimpleZestGraphView">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_MsjysN4gEeiek_VhfSji1g" elementId="project1101-zest-ast-type-carey.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_R1KEMN4gEeiek_VhfSji1g" elementId="project1101-zest-ast-type-carey.handledmenuitem.updategraphview" label="Update Graph View" command="_YXE5EN4gEeiek_VhfSji1g"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_U4wYEN4gEeiek_VhfSji1g" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_YXE5EN4gEeiek_VhfSji1g" elementId="project1101-zest-ast-type-carey.command.updategraphview" commandName="Update Graph View"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_XTOPYN4gEeiek_VhfSji1g" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_bM-vMN4gEeiek_VhfSji1g" elementId="project1101-zest-ast-type-carey.handler.0" contributionURI="bundleclass://project1101-zest-ast-type-Carey/handler.UpdateGraphViewHandlerClassEx" command="_YXE5EN4gEeiek_VhfSji1g"/>
+  </fragments>
+</fragment:ModelFragments>
