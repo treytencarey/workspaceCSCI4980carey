@@ -125,3 +125,16 @@
 2018-10-30 17:14:30,444 [Stop Help Server] INFO  org.eclipse.jetty.server.session - Stopped scavenging
 2018-10-30 17:14:30,452 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5bba70b{/help,null,UNAVAILABLE}
 2018-11-01 16:07:16,182 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-11-06 15:51:58,502 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-11-06 16:54:08,109 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-11-06 16:56:41,367 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @163434ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-11-06 16:56:41,762 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T15:27:37-06:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-11-06 16:56:41,800 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-11-06 16:56:41,801 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-11-06 16:56:41,802 [Start Help Server] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2018-11-06 16:56:41,846 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@522bcc08{/help,null,AVAILABLE}
+2018-11-06 16:56:41,897 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@15752a87{HTTP/1.1,[http/1.1]}{127.0.0.1:53479}
+2018-11-06 16:56:41,897 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @163965ms
+2018-11-06 17:28:54,473 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@15752a87{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2018-11-06 17:28:54,474 [Stop Help Server] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2018-11-06 17:28:54,486 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@522bcc08{/help,null,UNAVAILABLE}
