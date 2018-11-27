@@ -49,7 +49,7 @@ public class MyTableViewerPartDescriptor {
    private TableViewer viewer;
    private static final Image CHECKED = getImage("checked.gif");
    private static final Image UNCHECKED = getImage("unchecked.gif");
-
+   
    public MyTableViewerPartDescriptor() {
    }
 

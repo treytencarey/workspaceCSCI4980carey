@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_mZBxQO0QEeiQtYK_-cQ7JA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_qYCkgO0QEeiQtYK_-cQ7JA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_rgtcwO0QEeiQtYK_-cQ7JA" elementId="project1120-q3-carey.partdescriptor.careyzestview" label="Carey Zest View" iconURI="platform:/plugin/project1120-Q3-Carey/icons/sample.png" contributionURI="bundleclass://project1120-Q3-Carey/view.CareyZestView">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_j5syoO0REeiQtYK_-cQ7JA" elementId="project1120-q3-carey.popupmenu.careymenuitem" label="Carey Menu Item">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mXcncO0REeiQtYK_-cQ7JA" elementId="project1120-q3-carey.handledmenuitem.careymenuitem" label="Carey Menu Item" command="_qJHiQO0REeiQtYK_-cQ7JA"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_nkaJ0O0REeiQtYK_-cQ7JA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_o1O4gO0REeiQtYK_-cQ7JA" elementId="project1120-q3-carey.handler.0" contributionURI="bundleclass://project1120-Q3-Carey/handler.ASTZestHandler" command="_qJHiQO0REeiQtYK_-cQ7JA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_pOEPQO0REeiQtYK_-cQ7JA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_qJHiQO0REeiQtYK_-cQ7JA" elementId="project1120-q3-carey.command.careymenuitem" commandName="Carey Menu Item"/>
+  </fragments>
+</fragment:ModelFragments>
