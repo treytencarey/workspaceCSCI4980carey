@@ -7,6 +7,7 @@ package view;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.List;
 
@@ -35,13 +36,16 @@ import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.ide.IDE;
 import org.eclipse.zest.core.viewers.GraphViewer;
 import org.eclipse.zest.core.widgets.Graph;
+import org.eclipse.zest.core.widgets.GraphConnection;
 import org.eclipse.zest.core.widgets.GraphNode;
+import org.eclipse.zest.core.widgets.ZestStyles;
 import org.eclipse.zest.layouts.LayoutStyles;
 import org.eclipse.zest.layouts.algorithms.RadialLayoutAlgorithm;
 import org.eclipse.zest.layouts.algorithms.TreeLayoutAlgorithm;
 
 import analysis.MoveMethodAnalyzer;
 import analysis.ProjectAnalyzer;
+import graph.builder.GModelBuilder;
 import graph.model.GClassNode;
 import graph.model.GMethodNode;
 import graph.model.GNode;
@@ -50,6 +54,7 @@ import graph.model.GPackageNode;
 import graph.provider.GLabelProvider;
 import graph.provider.GModelProvider;
 import graph.provider.GNodeContentProvider;
+import model.Organizer;
 import model.OrganizerModelProvider;
 import util.UtilMsg;
 import util.UtilNode;
@@ -57,8 +62,8 @@ import util.UtilNode;
 public class MyGraphView {
    public static final String VIEW_ID = "simplezestproject5.partdescriptor.simplezestview5";
 
-   private GraphViewer gViewer;
-   private int layout = 0;
+   public static GraphViewer gViewer;
+   public static int layout = 0;
    private Menu mPopupMenu = null;
    private MenuItem menuItemAddOrganizerMethod = null, menuItemMoveMethod = null, menuItemOpenMethod = null, menuItemRefresh = null;
    private GraphNode selectedSrcGraphNode = null, selectedDstGraphNode = null;
@@ -66,9 +71,12 @@ public class MyGraphView {
 
    private GNode selectedGMethodNode = null, selectedGClassNode = null, selectedGPackageNode = null, selectedGClassOpenNode = null;
    private GNode prevSelectedGClassNode = null, prevSelectedGPackageNode = null;
+   
+   public static ArrayList<GraphNode> nodes;
 
    @PostConstruct
    public void createControls(Composite parent) {
+	  nodes = new ArrayList<GraphNode>();
       gViewer = new GraphViewer(parent, SWT.BORDER);
       gViewer.setContentProvider(new GNodeContentProvider());
       gViewer.setLabelProvider(new GLabelProvider());
@@ -196,6 +204,9 @@ public class MyGraphView {
 	        	 dialog.open();
 	        	 if (dialog.getOrganizer() != null) {
 	            	 OrganizerModelProvider.INSTANCE.getOrganizers().add(dialog.getOrganizer());
+	            	 
+	            	 new ProjectAnalyzer().analyze();
+	            	 MyGraphView.update();
 	                 
 	            	 try (BufferedWriter writer = new BufferedWriter(new FileWriter(MyTableViewer.filePath, true))) {
 	            	    writer.write(dialog.getOrganizer().toString() + "\n");
@@ -318,7 +329,7 @@ public class MyGraphView {
       gViewer.setInput(GModelProvider.instance().getNodes());
    }
 
-   public void update() {
+   public static void update() {
       gViewer.setInput(GModelProvider.instance().getNodes());
       if (layout % 2 == 0)
          gViewer.setLayoutAlgorithm(new TreeLayoutAlgorithm(LayoutStyles.NO_LAYOUT_NODE_RESIZING), true);

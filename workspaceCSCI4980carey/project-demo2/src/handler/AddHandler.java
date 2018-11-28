@@ -22,6 +22,7 @@ import org.eclipse.swt.widgets.Shell;
 import analysis.ProjectAnalyzer;
 import model.OrganizerModelProvider;
 import view.AddDialog;
+import view.MyGraphView;
 import view.MyTableViewer;
 
 public class AddHandler {
@@ -45,7 +46,8 @@ public class AddHandler {
             MyTableViewer v = (MyTableViewer) findPartObj;
             v.refresh();
          }
-         // TODO: SimpleZestGraphView.update();
+         MyGraphView.update();
+         new ProjectAnalyzer().analyze();
          
          try (BufferedWriter writer = new BufferedWriter(new FileWriter(MyTableViewer.filePath, true))) {
     	    writer.write(dialog.getOrganizer().toString() + "\n");

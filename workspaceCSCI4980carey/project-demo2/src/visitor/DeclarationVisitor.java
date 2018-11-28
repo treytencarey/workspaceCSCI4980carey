@@ -7,6 +7,11 @@
  */
 package visitor;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.IMethodBinding;
 import org.eclipse.jdt.core.dom.IPackageBinding;
@@ -15,6 +20,7 @@ import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.PackageDeclaration;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 
+import analysis.ProjectAnalyzer;
 import graph.model.GClassNode;
 import graph.model.GConnection;
 import graph.model.GMethodNode;
@@ -24,6 +30,7 @@ import graph.model.GPackageNode;
 import graph.provider.GModelProvider;
 import model.Organizer;
 import model.OrganizerModelProvider;
+import util.UtilNode;
 
 public class DeclarationVisitor extends ASTVisitor {
 
@@ -103,6 +110,22 @@ public class DeclarationVisitor extends ASTVisitor {
 			throw new RuntimeException();
 		}
 		addConnection(typeNode, methodNode, methodDecl.getStartPosition());
+		
+		ASTNode astNode = UtilNode.getOuterClass(methodDecl);
+      // System.out.println("METHOD FOUND (" + UtilNode.getName(astNode) + ", " + mNode.getStartPosition() + ", " + mNode.getLength() + "): " + mNode.getName().getFullyQualifiedName());
+      
+      if (ProjectAnalyzer.methodsToMove == null)
+    	  ProjectAnalyzer.methodsToMove = new HashMap<String, Map<String, ArrayList<Integer>>>();
+      
+      Map<String, ArrayList<Integer>> classToPos = ProjectAnalyzer.methodsToMove.get(UtilNode.getName(astNode));
+      if (classToPos == null)
+    	  classToPos = new HashMap<String, ArrayList<Integer>>();
+      ArrayList<Integer> pos = new ArrayList<Integer>();
+      pos.add(methodDecl.getStartPosition()); pos.add(methodDecl.getLength());
+      classToPos.put(methodDecl.getName().getFullyQualifiedName(), pos);
+      
+      ProjectAnalyzer.methodsToMove.put(UtilNode.getName(astNode), classToPos);
+		
 		return super.visit(methodDecl);
 	}
 

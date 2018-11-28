@@ -4,6 +4,10 @@ import java.util.EventObject;
 import java.util.List;
 
 import org.eclipse.draw2d.ColorConstants;
+import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.AbstractTypeDeclaration;
+import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.zest.core.widgets.Graph;
 import org.eclipse.zest.core.widgets.GraphNode;
 
@@ -25,6 +29,17 @@ public class UtilNode {
       graphNode.setBorderHighlightColor(ColorConstants.lightBlue);
       node.setNodeType(GNodeType.InValid);
    }
+   
+   public static ASTNode getOuterClass(ASTNode node) {
+      do {
+         // Keep searching if this node is not null and
+         // it is not a type declaration node and
+         // it is a child of compilation unit node.
+         node = node.getParent();
+      } while (node != null && node.getNodeType() != ASTNode.TYPE_DECLARATION && //
+            ((AbstractTypeDeclaration) node).isPackageMemberTypeDeclaration());
+      return node;
+   }
 
    public static void resetPackageNode(GraphNode graphNode, GNode node) {
       if (graphNode == null || graphNode.isDisposed() || !(node instanceof GPackageNode)) {
@@ -38,6 +53,14 @@ public class UtilNode {
       graphNode.setHighlightColor(prov.getNodeHighlightColor(node));
       graphNode.setBorderHighlightColor(prov.getBorderHighlightColor(node));
       node.setNodeType(GNodeType.InValid);
+   }
+   
+   public static String getName(ASTNode astNode) {
+      if (astNode instanceof TypeDeclaration) {
+         return ((TypeDeclaration) astNode).getName().getFullyQualifiedName();
+      } else {
+         return ((MethodDeclaration) astNode).getName().getFullyQualifiedName();
+      }
    }
 
    public static boolean isPackageNode(EventObject e) {
