@@ -47,6 +47,7 @@ import analysis.MoveMethodAnalyzer;
 import analysis.ProjectAnalyzer;
 import graph.builder.GModelBuilder;
 import graph.model.GClassNode;
+import graph.model.GConnection;
 import graph.model.GMethodNode;
 import graph.model.GNode;
 import graph.model.GNodeType;
@@ -58,6 +59,7 @@ import model.Organizer;
 import model.OrganizerModelProvider;
 import util.UtilMsg;
 import util.UtilNode;
+import visitor.DeclarationVisitor;
 
 public class MyGraphView {
    public static final String VIEW_ID = "simplezestproject5.partdescriptor.simplezestview5";
@@ -65,7 +67,7 @@ public class MyGraphView {
    public static GraphViewer gViewer;
    public static int layout = 0;
    private Menu mPopupMenu = null;
-   private MenuItem menuItemAddOrganizerMethod = null, menuItemMoveMethod = null, menuItemOpenMethod = null, menuItemRefresh = null;
+   private MenuItem menuItemAddOrganizerMethod = null, menuItemMoveMethod = null, menuItemOpenMethod = null, menuItemOpenMethodMethod = null, menuItemRefresh = null;
    private GraphNode selectedSrcGraphNode = null, selectedDstGraphNode = null;
    private GraphNode prevSelectedDstGraphNode = null;
 
@@ -102,6 +104,10 @@ public class MyGraphView {
       menuItemOpenMethod = new MenuItem(mPopupMenu, SWT.CASCADE);
       menuItemOpenMethod.setText("Open");
       addSelectionListenerMenuItemOpenMethod();
+      
+      menuItemOpenMethodMethod = new MenuItem(mPopupMenu, SWT.CASCADE);
+      menuItemOpenMethodMethod.setText("Open Method in New Graph View");
+      addSelectionListenerMenuItemOpenMethodMethod();
 
       menuItemRefresh = new MenuItem(mPopupMenu, SWT.CASCADE);
       menuItemRefresh.setText("Refresh");
@@ -114,11 +120,13 @@ public class MyGraphView {
             menuItemMoveMethod.setEnabled(false);
             menuItemAddOrganizerMethod.setEnabled(false);
             menuItemOpenMethod.setEnabled(false);
+            menuItemOpenMethodMethod.setEnabled(false);
             resetSelectedSrcGraphNode();
 
             if (UtilNode.isMethodNode(e)) {
                System.out.println("single clicked");
                menuItemMoveMethod.setEnabled(true);
+               menuItemOpenMethodMethod.setEnabled(true);
 
                selectedSrcGraphNode = (GraphNode) ((Graph) e.getSource()).getSelection().get(0);
                selectedSrcGraphNode.setBorderWidth(1);
@@ -299,6 +307,61 @@ public class MyGraphView {
 	         }
 	      };
 	      menuItemOpenMethod.addSelectionListener(menuItemListenerOpenMethod);
+	   }
+   
+   private void addSelectionListenerMenuItemOpenMethodMethod() {
+	      SelectionListener menuItemListenerOpenMethodMethod = new SelectionListener() {
+	         @Override
+	         public void widgetSelected(SelectionEvent e) {
+	        	 String projName = selectedGMethodNode.getParent().split("\\.")[0];
+	        	 String packageName = selectedGMethodNode.getParent().split("\\.")[1];
+	        	 String className = selectedGMethodNode.getParent().split("\\.")[2];
+	        	 String methodName = selectedGMethodNode.getName();
+	        	 
+	        	 ProjectAnalyzer analyzer = new ProjectAnalyzer();
+	             analyzer.analyze();
+	             
+	             GNode methodNode = null;
+	             ArrayList<GNode> nodes = new ArrayList<GNode>();
+	             for (GNode node : GModelProvider.instance().getNodes())
+	             {
+	            	 if (node.getId().equals(projName + "." + packageName) ||
+	            		 node.getId().equals(projName + "." + packageName + "." + className) ||
+	            		 node.getId().equals(projName + "." + packageName + "." + className + "." + methodName))
+	            	 {
+	            		 if (node.getId().split("\\.").length == 4)
+	            			 methodNode = node;
+	            		 
+	            		 for (int i = node.connections.size()-1; i >= 0; i--)
+	            		 {
+	            			 GNode conNode = node.connections.get(i);
+	            			 
+	            			 if (conNode.getId().equals(projName + "." + packageName) ||
+            					 conNode.getId().equals(projName + "." + packageName + "." + className) ||
+            					 conNode.getId().equals(projName + "." + packageName + "." + className + "." + methodName))
+        	            	 {
+	            				 
+        	            	 } else {
+        	            		 node.connections.remove(i);
+        	            	 }
+	            		 }
+	            		 
+	            		 nodes.add(node);
+	            	 }
+	             }
+	             for (String localVar : DeclarationVisitor.methodVariables.get(projName + "." + packageName + "." + className + "." + methodName))
+	             {
+	            	 GNode varNode = new GNode(localVar, localVar, localVar);
+	            	 methodNode.connections.add(varNode);
+	             }
+	             gViewer.setInput(nodes);
+	         }
+
+	         @Override
+	         public void widgetDefaultSelected(SelectionEvent e) {
+	         }
+	      };
+	      menuItemOpenMethodMethod.addSelectionListener(menuItemListenerOpenMethodMethod);
 	   }
    
    private void addSelectionListenerMenuItemRefresh() {

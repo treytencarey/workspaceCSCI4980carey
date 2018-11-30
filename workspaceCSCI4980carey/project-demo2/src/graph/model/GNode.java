@@ -11,7 +11,7 @@ public class GNode {
    private final String id;
    private final String name;
    private final String parent;
-   private List<GNode>  connections;
+   public List<GNode>  connections;
    private GNodeType    type;
 
    public GNode(String id, String name, String parent) {

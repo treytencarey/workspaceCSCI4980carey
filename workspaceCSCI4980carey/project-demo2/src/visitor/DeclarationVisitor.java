@@ -18,7 +18,9 @@ import org.eclipse.jdt.core.dom.IPackageBinding;
 import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.PackageDeclaration;
+import org.eclipse.jdt.core.dom.SingleVariableDeclaration;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
+import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 
 import analysis.ProjectAnalyzer;
 import graph.model.GClassNode;
@@ -33,6 +35,8 @@ import model.OrganizerModelProvider;
 import util.UtilNode;
 
 public class DeclarationVisitor extends ASTVisitor {
+	
+	public static Map<String, ArrayList<String>> methodVariables = new HashMap<String, ArrayList<String>>();
 
 	public boolean visit(PackageDeclaration pkgDecl) {
 		insertPackageNode(pkgDecl);
@@ -126,7 +130,7 @@ public class DeclarationVisitor extends ASTVisitor {
       
       ProjectAnalyzer.methodsToMove.put(UtilNode.getName(astNode), classToPos);
 		
-		return super.visit(methodDecl);
+	  return super.visit(methodDecl);
 	}
 
 	private GNode insertMethodNode(MethodDeclaration methodDecl) {
@@ -141,6 +145,18 @@ public class DeclarationVisitor extends ASTVisitor {
 		String id = parent + "." + methodName;
 		GMethodNode n = new GMethodNode(id, methodName, parent);
 		n.setPrjName(prjName).setPkgName(pkgName).setClassName(className);
+		
+		ArrayList<String> variables = new ArrayList<String>();
+	      methodDecl.accept(new ASTVisitor() {
+	          public boolean visit(VariableDeclarationFragment fd) {
+	              variables.add(fd.toString());
+	              return false;
+	          }
+	      });
+	    for (Object param : methodDecl.parameters())
+	    	variables.add(((SingleVariableDeclaration)param).getName().toString());
+	    methodVariables.put(prjName + "." + pkgName + "." + className + "." + methodName, variables);
+		
 		return addNode(n);
 	}
 
